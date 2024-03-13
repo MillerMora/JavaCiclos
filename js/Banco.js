@@ -1,7 +1,7 @@
 let sumaSaldosAcreedores = 0;
 let numeroCuenta, nombreCliente, saldoActual, estadoCuenta;
 
-while (numeroCuenta < 0) {
+while (numeroCuenta >= 0) {
   numeroCuenta = parseInt(prompt("Ingrese el número de cuenta (ingrese un valor negativo para finalizar:"));
   nombreCliente = prompt("Ingrese el nombre del cliente:");
   saldoActual = parseInt(prompt("Ingrese el saldo actual:"));
