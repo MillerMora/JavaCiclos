@@ -1,8 +1,16 @@
 let sumaSaldosAcreedores = 0;
-let numeroCuenta, nombreCliente, saldoActual, estadoCuenta;
+let numeroCuenta = 0,
+  nombreCliente,
+  saldoActual,
+  estadoCuenta;
 
 while (numeroCuenta >= 0) {
-  numeroCuenta = parseInt(prompt("Ingrese el número de cuenta (ingrese un valor negativo para finalizar:"));
+  numeroCuenta = parseInt(
+    prompt(
+      "Ingrese el número de cuenta (ingrese un valor negativo para finalizar:"
+    )
+  );
+  if (numeroCuenta < 0) break;
   nombreCliente = prompt("Ingrese el nombre del cliente:");
   saldoActual = parseInt(prompt("Ingrese el saldo actual:"));
 
@@ -15,11 +23,11 @@ while (numeroCuenta >= 0) {
     estadoCuenta = "Nulo";
   }
 
-  document.write("Número de cuenta: " + numeroCuenta );
+  document.write("Número de cuenta: " + numeroCuenta);
   document.write("Nombre del cliente: " + nombreCliente);
   document.write("Estado de la cuenta: " + estadoCuenta);
 }
 
-document.write( "La suma total de los saldos acreedores es: " +
-    sumaSaldosAcreedores
+document.write(
+  "La suma total de los saldos acreedores es: " + sumaSaldosAcreedores
 );
